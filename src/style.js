@@ -18,6 +18,7 @@ export const HeaderContent = styled.section`
     word-wrap: break-word;
     text-align: center;
     gap: 1rem;
+    z-index: 1;
 
     h1 {
         font-size: 2.5rem;
@@ -27,6 +28,14 @@ export const HeaderContent = styled.section`
     p {
         font-size: 1.5rem;
         font-weight: 400;
+    }
+
+    @media only screen and (width <= 515px) {
+        width: 70%;
+
+        p {
+            font-size: 1.2rem;
+        }
     }
 `;
 
@@ -55,6 +64,22 @@ export const Head = styled.section`
     flex-direction: column;
     border-radius: 4rem 4rem 0 0;
     background-color: #fff;
+
+    @media only screen and (1000px <= width <= 1200px) {
+        width: 50%;
+    }
+
+    @media only screen and (851px <= width <= 999px) {
+        width: 60%;
+    }
+
+    @media only screen and (width <= 851px) {
+        width: 80%;        
+    }
+
+    @media only screen and (width <= 600px) {
+        width: calc(100% - 1rem);
+    }
 `;
 
 export const Face = styled.section`
@@ -66,6 +91,11 @@ export const Face = styled.section`
     flex-direction: column;
     background-color: #FFE1C9;
     border-radius: 50%;
+    z-index: 2;
+
+    @media only screen and (width <= 455px) {
+        width: 90%;
+    }
 `;
 
 export const Ears = styled.section`
@@ -77,6 +107,25 @@ export const Ears = styled.section`
     position: absolute;
     top: 3rem;
     z-index: 0;
+
+    @media only screen and (1000px <= width <= 1200px) {
+        width: 83%;
+        justify-content: space-around;
+    }
+
+    @media only screen and (851px <= width <= 999px) {
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    @media only screen and (width <= 851px) {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    @media only screen and (width <= 600px) {
+        width: 95%;
+    }
 `;
 
 export const Ear = styled.section`
@@ -84,6 +133,14 @@ export const Ear = styled.section`
     height: 50%;
     background-color: #FFF;
     border-radius: 50% 50% 0 0;
+
+    @media only screen and (851px <= width <= 999px) {
+        width: 15%;
+    }
+
+    @media only screen and (width <= 851px) {
+        width: 17%;
+    }
 `;
 
 export const Eyes = styled.section`
